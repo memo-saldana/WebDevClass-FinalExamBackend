@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 
-// revisa tu connectionURL aqui :-)
-
-mongoose.connect( connectionURL, {
+mongoose.connect( process.env.connectionURL, {
   useNewUrlParser: true,
   useCreateIndex: true
 })
